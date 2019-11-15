@@ -1,0 +1,139 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/JosefinSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/JosefinSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Bold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Regular.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Italic.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@tailwind base;
+
+@tailwind components;
+
+* {
+  @apply outline-none relative;
+}
+
+body {
+  background: url(../images/me.svg) no-repeat;
+  background-position: bottom center;
+}
+
+::selection {
+  @apply bg-yellow-400 text-yellow-800;
+}
+
+.rise {
+  @apply shadow-md;
+
+  transition: 0.25s ease;
+}
+
+.rise:focus,
+.rise:hover {
+  @apply shadow-lg;
+
+  transform: translateY(-2px);
+}
+
+.rise:active {
+  @apply shadow-md;
+
+  transform: translateY(0);
+}
+
+.navigation a {
+  @apply py-2 text-gray-500;
+
+  transition: 0.25s ease;
+}
+
+.navigation a:focus,
+.navigation a:hover {
+  @apply text-white;
+}
+
+.navigation a.active {
+  @apply border-b-2 border-yellow-400 mx-4 text-white;
+}
+
+.navigation a:not(.active)::after {
+  @apply bg-yellow-400;
+
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.25s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigation a:not(.active):focus::after,
+.navigation a:not(.active):hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.contact-button svg {
+  transition: 0.25s ease;
+}
+
+.contact-button:focus svg,
+.contact-button:hover svg {
+  transform: translateX(2px);
+}
+
+.contact-button:active svg {
+  transform: translateX(0);
+}
+
+@tailwind utilities;
