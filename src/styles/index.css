@@ -88,17 +88,6 @@ body {
   transform: translateY(0);
 }
 
-.navigation a {
-  @apply py-2 text-gray-500;
-
-  transition: 0.25s ease;
-}
-
-.navigation a:focus,
-.navigation a:hover {
-  @apply text-white;
-}
-
 .navigation a.active {
   @apply border-b-2 border-yellow-400 mx-4 text-white;
 }
