@@ -46,7 +46,7 @@ function Index() {
             </a>
           </div>
 
-          <a className="contact-button bg-yellow-400 flex items-center ml-4 px-6 py-3 rise rounded-full text-yellow-900 uppercase" href="mailto:s@sammagee.me">
+          <a className="contact-button bg-yellow-400 flex items-center ml-4 px-6 py-3 rise rounded-full text-yellow-900 uppercase" href="mailto:hi@sammagee.me">
             <span className="mr-2 mt-1">Contact</span>
 
             <svg className="fill-current text-yellow-700 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
