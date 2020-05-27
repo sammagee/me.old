@@ -8,7 +8,7 @@ function Index() {
       <Helmet>
         <title>Sam Magee - Fullstack Devsigner</title>
         <meta name="description" content="Hey there! My name is Sam Magee. I'm a fullstack developer and designer based in Iowa, but willing to work with anyone, anywhere!" />
-        <meta name="keywords" content="sam magee, sam, magee, designer, developer, web designer, web developer, full stack, full stack developer, full-stack, fullstack" />
+        <meta name="keywords" content="sam magee, sam, magee, devsigner, designer, developer, web designer, web developer, full stack, full stack developer, full-stack, fullstack" />
         <meta name="author" content="Sam Magee" />
         <meta name="copyright" content="Sam Magee" />
       </Helmet>
@@ -32,13 +32,13 @@ function Index() {
         <div className="flex flex-1 items-center justify-end">
           <div className="navigation">
             <a className="flex items-center" href="https://github.com/sammagee" target="_blank" rel="noopener noreferrer">
-              <svg className="text-gray-600 h-4 w-4" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg className="text-gray-600 h-4 w-4" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
               </svg>
 
               <span className="link-text ml-1 mt-1 text-white">GitHub</span>
 
-              <svg className="ml-1 h-3 w-3 text-gray-700" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg className="ml-1 h-3 w-3 text-gray-700" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
                 <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -60,7 +60,14 @@ function Index() {
       <div className="flex h-screen items-center justify-center">
         <hgroup>
           <h1 className="font-bold text-white text-5xl">Sam Magee</h1>
-          <h2 className="font-bold text-gray-500 text-2xl text-right">Devsigner</h2>
+          <h2 className="font-bold text-gray-500 text-xl text-right">
+            <span className="text-gray-700">@</span>
+            {' '}
+            <a className="inline-flex items-center hover:text-gray-300 transition duration-200 ease-in-out" href="https://krafted.dev">
+              krafted
+              <span className="inline-block w-4 h-4 -mt-1 ml-2 bg-yellow-500 rounded-full"></span>
+            </a>
+          </h2>
         </hgroup>
       </div>
     </main>

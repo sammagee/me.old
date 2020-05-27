@@ -72,7 +72,7 @@ body {
 .rise {
   @apply shadow-md;
 
-  transition: 0.25s ease;
+  transition: 0.2s ease;
 }
 
 .rise:focus,
@@ -103,7 +103,7 @@ body {
   bottom: 0;
   left: 0;
   transform-origin: bottom right;
-  transition: transform 0.25s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.2s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .navigation a:not(.active):focus::after,
@@ -113,7 +113,7 @@ body {
 }
 
 .contact-button svg {
-  transition: 0.25s ease;
+  transition: 0.2s ease;
 }
 
 .contact-button:focus svg,
@@ -126,3 +126,7 @@ body {
 }
 
 @tailwind utilities;
+
+.cursor-help {
+  cursor: help;
+}
