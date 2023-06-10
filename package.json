@@ -2,7 +2,7 @@
   "name": "sammagee.me",
   "version": "1.0.0",
   "dependencies": {
-    "gatsby": "^2.22.11",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.0.15",
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-postcss": "^2.1.2",
